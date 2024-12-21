@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    height: 100vh;
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+    background-size: 200% 200%;
+    animation: gradientShift 7s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.titleImage {
+    width: 300px; 
+    height: auto;
+    margin-bottom: 20px; 
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.container {
+    text-align: center;
+}
+.title-font {
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.body-font {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.button {
+    text-decoration: none;
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+a.button:link, a.button:visited {
+    text-decoration: none;
+}
+.corner-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 0.9em;
+    z-index: 1000;
+}
+.objective:hover{
+    background: rgba(66, 57, 5, 0.6);
+}
+
+.items:hover {
+    background: rgba(160, 145, 12, 0.6);
+}
+
+.maps:hover {
+    background: rgba(108, 189, 33, 0.6);
+}
+

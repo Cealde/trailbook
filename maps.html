@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <!-- Link to Google Fonts -->
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="maps.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainer-container" id="slider">
+            <div class="mainer body-font" onclick="updateContent(this)" data-title="Midnight City" data-image="maps/mc.png" data-text="A Part of a city built for employees of an MCO.(Military Commerce Organization). Nuclear Facility,but after the accident, this city was abandoned but the lights remained after the power surge. This city contains towering skyscrapers, easy access points and many staircases, leading to Short-Range fights.">
+                <span>Midnight City</span>
+            </div>
+            <div class="mainer body-font" onclick="updateContent(this)" data-title="Deep Mall" data-image="maps/dm.png" data-text="A Warehouse known as Warehouse 17 of MCO. Containing Weapons, Tanks and Experimental Technologies for The Plenary War,but after The Demilitarization Era, this warehouse has turned into a mall. This Mall is low on verticality but has many shops and sections, limited exits leading to Mid-Range Fights.">
+                <span>Deep Mall</span>
+            </div>
+            <div class="mainer body-font" onclick="updateContent(this)" data-title="Ocean Carrier" data-image="maps/oc.png" data-text="A Former Aircraft Carrier for MCO. during The Plenary War, but after The Demilitarization Era, This airship carrier was decommisioned, and now planned to be used as a Luxury Cruise Ship. This ship contains 3 levels, all with long range fights and tight rooms, with vents and ladders to each level, giving a mix of Ranged Fights.">
+                <span>Ocean Carrier</span>
+            </div>
+            <div class="mainer body-font" onclick="updateContent(this)" data-title="Lavish School" data-image="maps/ls.png" data-text="An Abandoned School built over an old Curium Mine, the Radiation from the Curium powers the School, but after the Curium Cave collapsed increasing Radiation, the school had to be abandoned. This is one of the largest maps in Trail in terms of explorability, with a giant school and a basketball court, giving a mix of Ranged Fights">
+                <span>Lavish School</span>
+            </div>
+            <div class="mainer body-font" onclick="updateContent(this)" data-title="Regal Suburbs" data-image="maps/rs.png" data-text="The Housing area for the Senior Officers and Scientists at MCO. built near the Nuclear Facility and a Quark Laboratory had to be evacuated due to the accident. This map has many Houses, a central park and a decommisioned metro station, with tight house interiors and an open road, leading to Short-Range Fights">
+                <span>Regal Suburbs</span>
+            </div>
+            <div class="mainer body-font" onclick="updateContent(this)" data-title="Arctic Outpost" data-image="maps/ao.png" data-text="An Old Remote Mining Outpost of MCO. in the Arctic designed to extract Rare Liquid Curium found beneath the Arctic sheets used to make Thermonuclear warheads, This map is very Distant, with great space seperating buildings, with little to no access points, leading to Long-Range Fights">
+                <span>Arctic Outpost</span>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="content-box body-font" id="content-box">
+        <h1 class="title" id="content-title">Maps</h1>
+        <img id="content-image" src="images/default.jpg" alt="Default Image">
+        <p id="content-text">Click any objective</p>
+    </div>
+    <a href="index.html">
+        <button class="back-button body-font">Go Back</button>
+    </a>
+    <div class="corner-text">By cldp.</div>
+
+    <script src="maps.js"></script>
+</body>
+
+</html>

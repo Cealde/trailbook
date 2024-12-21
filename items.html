@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objective</title>
+    <!-- Link to Google Fonts -->
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="items.css">
+</head>
+
+<body>
+    <div class="main-box body-font" id="mainBox">
+        <h1 class="title">Items</h1>
+        <p>Click any item to get its function</p>
+    </div>
+
+    <div class="button-container">
+        <div class="arrow" id="leftArrow" onclick="scrollButtons(-1)">&lt;</div>
+        <div class="button body-font" onclick="updateText('A Handheld explosive device designed to produce a powerful explosion upon detonation.\nDeals huge damage to anyone caught in the blast, also damages self and teammates.\n Can destroy enemy and friendly devices.', this)"
+        data-title="Grenade">
+            <img src="icons/grenade.png" alt="Grenade"> <span>Grenade</span>
+        </div>
+        <div class="button body-font" onclick="updateText('An Incendiary device that, upon landing, ignites a circle of flames lasting 10 seconds,\nCreating an area where anyone caught within the fire gets dealt low damage countinously.\nDamages all players within the flames but devices are not damaged.', this)"
+        data-title="Incendiary">
+            <img src="icons/incendiary.png" alt="Incendiary"> <span>Incendiary</span>
+        </div>
+        <div class="button body-font" onclick="updateText('An Explosive Device, that the player can deploy when right-clicked.\nAfter deployment the player is given a remote detonator that they can use to explode all the Remote Explosives deployed. Damages all players and devices caught in the blast.', this)"
+        data-title="Remote Explosive">
+            <img src="icons/explosive.png" alt="Explosive"> <span>Remote Explosive</span>
+        </div>
+        <div class="button body-font" onclick="updateText('A Smoke Bomb that, upon landing, releases a dense cloud of smoke, creating a vision blocking smoke cloud where enemy players are slowed, take continuous low damage, and experience temporary blindness, making it effective as a get away or to weaken the enemy.', this)"
+        data-title="Smoke Bomb">
+            <img src="icons/smoke.png" alt="Icon 4"> <span>Smoke Bomb</span> </div>
+        <div class="button body-font" onclick="updateText('A splashable potion, that once splashed on self effectively gives the player the strength effect for 15 seconds, giving the player an extra 3 hearts of damage.', this)" data-title="Strength Potion">
+            <img src="icons/strength.png" alt="Icon 5"> <span>Strength Potion</span>
+
+
+
+        </div>
+        <div class="button body-font" onclick="updateText('A splashable potion, that once splashed on self effectively gives the player the Haste,Absorption effect for 30 seconds and Speed effect for 20 seconds, letting the player mine Iron,Gold and Diamond Blocks faster, Getting the player an absorption sheild of 4 Hearts and Giving the player +20% Movment Speed.', this)"
+        data-title="Haste Potion">
+            <img src="icons/haste.png" alt="Icon 5"> <span>Haste Potion</span>
+        </div>
+        <div class="button body-font" onclick="updateText('An IES (Integrated Enemy Sensor) is a deployable that can be deployed by the player at a right-click, once deployed it actively scans for enemy players in a 6 block radius. Once it has detected an enemy within its range, it starts a 2 second countdown where the enemy must get out of its range or destroy it, once the countdown ends it explodes dealing very low damage and revealing the player, also telling the player who deployed the IES that it has been triggered.', this)"
+        data-title="IES">
+            <img src="icons/IES.png" alt="Icon 5"> <span>IES</span>
+        </div>
+        <div class="button body-font" onclick="updateText('A Stim can be used by the player in both ways. It can be self-injected by holding down right-click for 2 seconds, applying Regeneration, Absorption, Speed, Strength for a short period of time. It can be applied to other teammates by pressing right-click aiming at their body, It applies the same effects but they last longer. When given it damages the reciever by an extremely low amount, and once the effects of the Stim ends it applies a slowness penalty for 4 seconds.', this)"
+        data-title="Stim">
+            <img src="icons/stim.png" alt="Icon 5"> <span>Stim</span>
+        </div>
+        <div class="button body-font" onclick="updateText('The Ender Pearl, is similar to the vanilla ender pearl teleporting its user to its landing point, however players cannot teleport higher than the map boundaries.', this)" data-title="Ender Pearl">
+            <img src="icons/pearl.png" alt="Icon 5"> <span>Ender Pearl</span>
+        </div>
+        <div class="button body-font" onclick="updateText('The Invisibility Fragment can be used by the player by right-clicking it, by using, it grants Invisibility, Hunger, Speed and Resistance for 16 seconds, and also temporarily removes armor from the player for the duration of the effects. If the player is damaged during Invisibility it shows some particle effects, and once the player is damaged 4 times they lost their Invisibility', this)"
+        data-title="Invisibility Fragment">
+            <img src="icons/invis.png" alt="Icon 5"> <span>Invisibility Fragment</span>
+        </div>
+
+        <div class="arrow" id="rightArrow" onclick="scrollButtons(1)">&gt;</div>
+
+    </div>
+    <a href="index.html">
+        <button class="back-button body-font">Go Back</button>
+        <div class="corner-text">By cldp.</div>
+        <script src="items.js"></script>
+
+</html>
