@@ -68,6 +68,7 @@ body {
     backdrop-filter: blur(10px);
     text-align: center;
     color: #ebdf9c;
+    transition: transform 0.3s, width 0.5s;
 }
 
 .content-box {
