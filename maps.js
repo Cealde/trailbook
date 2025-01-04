@@ -50,3 +50,37 @@ document.querySelectorAll('.mainer').forEach(button => {
         this.classList.add('expanded');
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all mainer elements and initialize variables
+    const buttons = Array.from(document.querySelectorAll('.mainer'));
+    let currentIndex = 0;
+
+    // Function to highlight the current button
+    function updateFocus(index) {
+        buttons.forEach((button, i) => {
+            button.style.outline = i === index ? '2px solid #ebdf9c' : 'none';
+        });
+        buttons[index].focus(); // Focus the current button for accessibility
+    }
+
+    // Initial focus on the first button
+    updateFocus(currentIndex);
+
+    // Add keydown event listener to the document
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowUp') {
+            // Navigate up
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : buttons.length - 1;
+            updateFocus(currentIndex);
+            event.preventDefault(); // Prevent default scrolling behavior
+        } else if (event.key === 'ArrowDown') {
+            // Navigate down
+            currentIndex = (currentIndex < buttons.length - 1) ? currentIndex + 1 : 0;
+            updateFocus(currentIndex);
+            event.preventDefault(); // Prevent default scrolling behavior
+        } else if (event.key === 'Enter') {
+            // Simulate a click on the current button when Enter is pressed
+            buttons[currentIndex].click();
+        }
+    });
+});
