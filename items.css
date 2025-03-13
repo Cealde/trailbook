@@ -149,10 +149,10 @@ body {
     font-size: 2em;
     cursor: pointer;
     margin: 0 20px;
-    color: #7e4f3d; /* Default arrow color */
+    color: #8a1515; /* Default arrow color */
 }
 
 .arrow.disabled {
-    color: #888; /* Grayed out color */
+    color: #dbb4b4; /* Grayed out color */
     cursor: default;
 }
