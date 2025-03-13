@@ -19,7 +19,7 @@ document.querySelectorAll('.button').forEach(button => {
   });
 
   let currentIndex = 0;
-  const itemsPerPage = 5;
+  const itemsPerPage = 6;
   const buttons = document.querySelectorAll('.button');
   
   
